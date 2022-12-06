@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
-    <div>Home page</div>
-  )
-}
+    <Fragment>
+      <div>Home page</div>
+      <button onClick={() => navigate('order-summary', { replace: true })}>
+        place order
+      </button>
+    </Fragment>
+  );
+};
 
-export default Home
+export default Home;
