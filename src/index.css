@@ -24,3 +24,8 @@ nav a.active {
   text-decoration: none;
   font-weight: bold;
 }
+
+.primery-nav {
+  background-color: aliceblue;
+  padding: 16px 32px;
+}
