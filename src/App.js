@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Admin from './components/Admin';
@@ -9,6 +8,7 @@ import NewProducts from './components/NewProducts';
 import NoMatch from './components/NoMatch';
 import OrderSummary from './components/OrderSummary';
 import Products from './components/Products';
+import Profile from './components/Profile';
 import UserDetails from './components/UserDetails';
 import Users from './components/Users';
 
@@ -30,6 +30,7 @@ function App() {
         <Route path="admin" element={<Admin />} />
         </Route>
         
+        <Route path="profile" element={<Profile />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
